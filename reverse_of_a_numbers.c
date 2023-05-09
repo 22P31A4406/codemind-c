@@ -1,14 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n,rem,sum=0,temp;
+    int n,s=0,rem;
     scanf("%d",&n);
-    temp=n;
     while(n>0)
     {
         rem=n%10;
-        sum=sum*10+rem;
+        s=s*10+rem;
         n=n/10;
     }
-    printf("%d",sum);
+    printf("%d",s);
 }
